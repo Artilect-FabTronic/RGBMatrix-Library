@@ -86,19 +86,21 @@ define the extern data zone
 **************************************************/
 extern unsigned char font8_8[92][8];
 extern unsigned char pic[4][8][8][3];
+
 /***************************************************
 all parts inition functions zone
 ***************************************************/
 void _IO_Init()
 {
   DDRD = 0xff; // set all pins direction of PortD
-  DDRC = 0xff; // set all pins direction of PortC
+  DDRC = 0b00000111; // set all pins direction of PortC
   DDRB = 0xff; // set all pins direction of PortB
   
   PORTD = 0x00; // set all pins output is low of PortD
   PORTC = 0x00; // set all pins output is low of PortC
   PORTB = 0x00; // set all pins output is low of PortB
 }
+
 void _LED_Init()
 {
   LED_RST(1);

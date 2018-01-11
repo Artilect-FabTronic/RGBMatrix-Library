@@ -11,6 +11,7 @@ Parameter:none
 
 void RGBMatrixInit();
 
+
 /********************************************************
 Name:DispShowChar
 Function:Display a English latter in LED matrix
@@ -32,14 +33,6 @@ Parameter:R: the value of RED.   Range:RED 0~255
 ********************************************************/
 void DispShowColor(unsigned char R,unsigned char G,unsigned char B);
 
-/********************************************************
-Name:DispShowColor
-Function:Fill a color in LED matrix
-Parameter:R: the value of RED.   Range:RED 0~255
-          G: the value of GREEN. Range:RED 0~255
-          B: the value of BLUE.  Range:RED 0~255
-********************************************************/
-void DispShowColor(unsigned char R,unsigned char G,unsigned char B);
 
 /********************************************************
 Name:DispShowPic
@@ -49,11 +42,11 @@ Parameter:Index:the index of picture in Flash.
 void DispShowPic(unsigned char Index);
 
 
-
 /*The base Function*/
 void _IO_Init();
 void _LED_Init();
 void _TC2_Init();
+
 /****************************************************
 the timer2 operate functions zone
 ****************************************************/
@@ -67,6 +60,7 @@ void LED_SCL(unsigned char temp);
 void LED_RST(unsigned char temp);
 void LED_LAT(unsigned char temp);
 void LED_SLB(unsigned char temp);
+
 /***************************************************
 the LED datas operate functions zone
 ***************************************************/
