@@ -8,6 +8,7 @@ Name:RGBMatrixInit
 Function:initialize RGBMatrixInit
 Parameter:none
 ********************************************************/
+
 void RGBMatrixInit();
 
 /********************************************************
